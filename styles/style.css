@@ -1,0 +1,183 @@
+@charset "UTF-8";
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  list-style-type: none; }
+
+body {
+  font-family: 'IBM Plex Mono', sans-serif;
+  display: flex;
+  justify-content: center;
+  flex-direction: column; }
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  /*background-color: cadetblue;*/
+  width: 100%;
+  height: auto;
+  padding: 5%; }
+
+h1 {
+  width: 80%;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 10vw;
+  font-weight: 400;
+  line-height: 1.2em; }
+
+header {
+  padding: 5%;
+  padding-top: 10%;
+  padding-bottom: 15%; }
+  header #descripcion {
+    padding-top: 6%;
+    font-size: 4.2vw;
+    line-height: 1.5em; }
+
+#menu {
+  /*background-color: aquamarine;*/
+  width: 1.8em;
+  height: 1.8em; }
+  #menu ul {
+    display: none; }
+
+#logo {
+  background-color: bisque;
+  width: 1.8em;
+  height: 1.8em; }
+
+#text-crossed {
+  text-decoration-line: line-through; }
+
+#episodios {
+  background-color: #0000FF;
+  padding-top: 15%;
+  padding-left: 5%;
+  padding-right: 5%; }
+  #episodios h1 {
+    color: white;
+    padding-bottom: 5%; }
+  #episodiosgrid {
+    display: flex;
+    flex-wrap: wrap; }
+  #episodios li {
+    width: 100%;
+    padding-bottom: 2%; }
+    #episodios li img {
+      width: 100%; }
+
+#celular {
+  width: 100%;
+  padding-top: 13%;
+  padding-bottom: 5%; }
+  #celular img {
+    width: 100%; }
+
+#donde-venimos {
+  padding: 5%; }
+  #donde-venimos p {
+    padding-top: 1em;
+    line-height: 1.5em;
+    font-size: 4.2vw; }
+
+#invitadas h1 {
+  padding: 5%; }
+
+#invitadas-grid {
+  display: flex;
+  flex-direction: column; }
+  #invitadas-grid li {
+    height: 0%;
+    line-height: 0px; }
+  #invitadas-grid img {
+    width: 100%; }
+
+#nuestros-temas {
+  margin-top: 5%; }
+  #nuestros-temas h1 {
+    padding: 5%; }
+
+.tema {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10%;
+  padding-bottom: 5%;
+  text-align: center;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 7.14vw;
+  font-weight: 600; }
+  .tema #icon {
+    width: 32%; }
+    .tema #icon img {
+      width: 100%;
+      padding-bottom: 0.7em; }
+
+#novedades {
+  padding-top: 25%;
+  padding-bottom: 20%;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: #0000FF;
+  color: white; }
+  #novedades h1 {
+    width: auto;
+    padding-bottom: 5%;
+    text-align: center; }
+
+.button {
+  background-color: #00F3BB;
+  text-align: center;
+  font-size: 4.62vw;
+  font-weight: 600;
+  color: #060A24;
+  margin-top: 10%;
+  padding: 5%;
+  width: 100%; }
+
+footer {
+  text-align: center;
+  padding: 5%;
+  padding-left: 15.5%;
+  padding-right: 15.5%;
+  font-size: 4.2vw; }
+  footer ul {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10%;
+    padding-bottom: 10%; }
+    footer ul li {
+      background-color: #00F3BB;
+      width: 1em;
+      height: 1em; }
+
+/* ------- MEDIA QUERY - Tamaño para Desktop ------ */
+@media (min-width: 768px) {
+  h1 {
+    font-size: 4.5vw; }
+
+  #menu {
+    width: auto; }
+    #menu ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end; }
+      #menu ul li {
+        font-size: 1.5vmin;
+        padding: 0.25; }
+
+  header h1 {
+    width: auto; }
+  header #descripcion {
+    padding-top: 1%;
+    width: 60%;
+    font-size: 1.5vw; }
+  header .button {
+    margin-top: 4vw;
+    padding-top: 1.1vw;
+    padding-bottom: 1.1vw;
+    width: 16vw;
+    font-size: 1.2vw; } }
+
+/*# sourceMappingURL=style.css.map */
