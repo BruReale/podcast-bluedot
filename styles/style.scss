@@ -417,5 +417,39 @@ footer
             }
         }
     }
+
+    #nuestros-temas
+    {
+        margin: 0;
+        padding: $normal-padding * 2.5;
+        padding-top: $normal-padding;
+
+        h1
+        {
+            width: 100%;
+            font-size: $text-size*0.8;
+            padding:0;
+        }
+
+        #temas-grid
+        {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+        }
+
+        .tema
+        {
+            li
+            {
+                /* ACOMODAR TAMAÑO DE IMAGENES */
+            }
+
+            p
+            {
+                font-size: $text-size * 0.4;
+            }
+        }
+    }
 }
     

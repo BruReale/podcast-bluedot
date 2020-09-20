@@ -240,6 +240,23 @@ footer {
     flex-direction: row;
     flex-wrap: wrap; }
     #invitadas #invitadas-grid ul li {
-      width: 33.33333%; } }
+      width: 33.33333%; }
+
+  #nuestros-temas {
+    margin: 0;
+    padding: 12.5%;
+    padding-top: 5%; }
+    #nuestros-temas h1 {
+      width: 100%;
+      font-size: 3.36vw;
+      padding: 0; }
+    #nuestros-temas #temas-grid {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row; }
+    #nuestros-temas .tema li {
+      /* ACOMODAR TAMAÑO DE IMAGENES */ }
+    #nuestros-temas .tema p {
+      font-size: 1.68vw; } }
 
 /*# sourceMappingURL=style.css.map */
