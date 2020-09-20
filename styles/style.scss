@@ -25,8 +25,6 @@ nav
 {
     display: flex;
     justify-content: space-between;
-
-    /*background-color: cadetblue;*/
     
     width: 100%;
     height: auto;
@@ -46,8 +44,8 @@ h1
 header
 {
     padding: $normal-padding;
-    padding-top: $normal-padding*2;
-    padding-bottom: $normal-padding*3;
+    padding-top: $normal-padding * 2;
+    padding-bottom: $normal-padding * 3;
 
     #descripcion
     {
@@ -265,16 +263,22 @@ footer
 /* ------- MEDIA QUERY - Tamaño para Desktop ------ */
 @media (min-width: 768px)
 {
-    $normal-padding: 0.5;
-
     h1
     {
         font-size: 4.5vw;
     }
     
+    nav
+    {
+        padding: $normal-padding * 1.2;
+        padding-top: $normal-padding * 0.4;
+        padding-bottom: $normal-padding * 0.2;
+    }
+
     #menu
     {
         width: auto;
+
         ul
         {   
             display: flex;
@@ -284,13 +288,16 @@ footer
             li
             {
                 font-size: 1.5vmin;
-                padding: $normal-padding*0.5;
+                padding-left: $normal-padding*0.5;
             }
         }
     }
 
     header
     {
+        padding-left: $normal-padding * 3;
+        padding-right: $normal-padding * 3;
+
         h1
         {
             width: auto;
@@ -312,6 +319,102 @@ footer
             width: 16vw;
 
             font-size: 1.2vw;
+        }
+    }
+
+    #episodios
+    {
+        padding-top: $normal-padding;
+
+        h1
+        {
+            padding-left: $normal-padding * 2.1;
+            font-size: $text-size*0.8;
+        }
+    }
+
+    #episodios-grid
+    {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-left: $normal-padding;
+        padding-right: $normal-padding;
+        
+        li
+        {
+            width: 47%;
+            height: 280px;
+        }
+    }
+
+    #donde-venimos-section
+    {
+        display: flex;
+        flex-direction: row;
+
+        padding: $normal-padding * 2.8;
+        padding-top: $normal-padding;
+        padding-bottom: $normal-padding;
+        
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #celular
+    {   
+        padding: 0%;    
+        width: 40%;
+
+        img
+        {
+            width: 100%;
+        }
+    }
+
+    #donde-venimos
+    {
+        width: 50%;
+        padding:0px;
+        padding-left: $normal-padding;
+
+        h1
+        {
+            width: 100%;
+            font-size: $text-size * 0.8;
+        }
+
+        p
+        {            
+            font-size: $text-size * 0.25;
+        }
+    }
+
+    #invitadas
+    {
+        h1
+        {
+            padding: $normal-padding*3;
+            padding-bottom: $normal-padding * 0.4;
+            padding-top: $normal-padding * 0.4;
+            width: 100%;
+            font-size: $text-size*0.8;
+        }
+
+        #invitadas-grid
+        {
+            ul
+            {                
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                
+                li
+                {
+                    width: 33.33333%
+                }
+            }
         }
     }
 }
