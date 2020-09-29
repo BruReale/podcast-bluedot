@@ -27,8 +27,8 @@ h1 {
 
 header {
   padding: 5%;
-  padding-top: 10%;
-  padding-bottom: 15%; }
+  padding-top: 5%;
+  padding-bottom: 10%; }
   header #descripcion {
     padding-top: 6%;
     font-size: 4.2vw;
@@ -50,13 +50,15 @@ header {
   text-decoration-line: line-through; }
 
 #episodios {
-  background-color: #0000FF;
+  background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+  transform: skewY(-5deg);
   padding-top: 15%;
+  padding-bottom: 30%;
   padding-left: 5%;
   padding-right: 5%; }
   #episodios h1 {
     color: white;
-    padding-bottom: 5%; }
+    padding-bottom: 2.5%; }
   #episodios #episodios-grid {
     display: flex;
     flex-direction: column;
@@ -76,9 +78,11 @@ header {
   #celular img {
     width: 100%; }
 
-#donde-venimos {
+#donde-venimos-section {
+  position: relative;
+  margin-top: -34%;
   padding: 5%; }
-  #donde-venimos p {
+  #donde-venimos-section p {
     padding-top: 1em;
     line-height: 1.5em;
     font-size: 4.2vw; }
@@ -117,18 +121,21 @@ header {
       padding-bottom: 0.7em; }
 
 #novedades {
+  transform: skewY(-5deg);
   padding-top: 25%;
   padding-bottom: 20%;
   padding-left: 5%;
   padding-right: 5%;
-  background-color: #0000FF;
+  background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
   color: white;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center; }
+  text-align: center; }
   #novedades h1 {
     width: 100%; }
+  #novedades #columna {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
 
 #ultimas-novedades {
   text-align: center;
@@ -143,6 +150,9 @@ header {
   margin-top: 10%;
   padding: 5%;
   width: 100%; }
+
+.antiskew {
+  transform: skewY(5deg); }
 
 footer {
   text-align: center;
@@ -163,7 +173,7 @@ footer {
 /* ------- MEDIA QUERY - Tamaño para Desktop ------ */
 @media (min-width: 768px) {
   h1 {
-    font-size: 4.5vw; }
+    font-size: 4vw; }
 
   nav {
     align-items: center;
@@ -199,7 +209,8 @@ footer {
       font-size: 1.2vw; }
 
   #episodios {
-    padding-top: 5%; }
+    padding-top: 7.5%;
+    padding-bottom: 8%; }
     #episodios h1 {
       padding-left: 10.5%;
       font-size: 3.36vw; }
@@ -213,10 +224,12 @@ footer {
         height: 280px; }
 
   #donde-venimos-section {
+    position: relative;
     display: flex;
     flex-direction: row;
     padding: 14%;
-    padding-top: 5%;
+    padding-top: 0px;
+    margin-top: -6.5%;
     padding-bottom: 5%;
     justify-content: center;
     align-items: center; }
@@ -253,7 +266,8 @@ footer {
   #nuestros-temas {
     margin: 0;
     padding: 12.5%;
-    padding-top: 5%; }
+    padding-top: 5%;
+    padding-bottom: 5%; }
     #nuestros-temas h1 {
       width: 100%;
       font-size: 3.36vw;
@@ -278,7 +292,10 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center; }
+    text-align: center;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    margin-bottom: -4.5%; }
     #novedades .button {
       margin-top: 4vw;
       padding-top: 1.2vw;
@@ -291,8 +308,12 @@ footer {
       font-weight: 700; }
 
   footer {
+    background-color: white;
+    position: relative;
+    z-index: 9999;
     padding: 5%;
-    padding-top: 3.5%; }
+    padding-top: 3.5%;
+    padding-bottom: 3.5%; }
     footer #container {
       display: flex;
       flex-direction: row;

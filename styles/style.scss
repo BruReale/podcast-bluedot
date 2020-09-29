@@ -1,6 +1,6 @@
 $normal-padding: 5%;
 $text-size:  4.2vw;
-$background-blue: #0000FF;
+$background-blue: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);;
 $button-color: #00F3BB;
 $body-font-type: 'IBM Plex Mono', sans-serif;
 $h1-font-type: 'IBM Plex Sans', sans-serif;
@@ -46,8 +46,8 @@ h1
 header
 {
     padding: $normal-padding;
-    padding-top: $normal-padding * 2;
-    padding-bottom: $normal-padding * 3;
+    padding-top: $normal-padding ;
+    padding-bottom: $normal-padding * 2;
 
     #descripcion
     {
@@ -83,16 +83,20 @@ header
 
 #episodios
 {
-    background-color: $background-blue;
+    background-image: $background-blue;
+    transform: skewY(-5deg);
 
     padding-top: $normal-padding*3;
+    padding-bottom: $normal-padding * 6;
     padding-left: $normal-padding;
     padding-right: $normal-padding;
+
+   
 
     h1
     {
         color: white;
-        padding-bottom: 5%;
+        padding-bottom: $normal-padding * 0.5;
     }
 
     #episodios-grid
@@ -131,8 +135,10 @@ header
     }
 }
 
-#donde-venimos
+#donde-venimos-section
 {
+    position: relative;
+    margin-top: -34%;
     padding: $normal-padding;
 
     p
@@ -206,25 +212,30 @@ header
 
 #novedades
 {
+    transform: skewY(-5deg);
+
     padding-top: $normal-padding * 5;
     padding-bottom: $normal-padding * 4;
     padding-left: $normal-padding;
     padding-right: $normal-padding;
     
-    background-color: $background-blue;
+    background-image: $background-blue;
     color: white;
 
     text-align: center;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 
     h1
     {
         width: 100%;
     }
     
+    #columna
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 #ultimas-novedades
@@ -243,10 +254,15 @@ header
 
     color: #060A24;
 
-    margin-top: $normal-padding*2;
+    margin-top: $normal-padding * 2;
     padding: $normal-padding;
 
     width: 100%;
+}
+
+.antiskew
+{
+    transform: skewY(5deg);
 }
 
 footer
@@ -282,7 +298,7 @@ footer
 {
     h1
     {
-        font-size: 4.5vw;
+        font-size: 4vw;
     }
     
     nav
@@ -344,7 +360,8 @@ footer
 
     #episodios
     {
-        padding-top: $normal-padding;
+        padding-top: $normal-padding * 1.5;
+        padding-bottom: $normal-padding * 1.6;
 
         h1
         {
@@ -370,11 +387,14 @@ footer
 
     #donde-venimos-section
     {
+        position: relative;
+
         display: flex;
         flex-direction: row;
 
         padding: $normal-padding * 2.8;
-        padding-top: $normal-padding;
+        padding-top: 0px;
+        margin-top: -6.5%;
         padding-bottom: $normal-padding;
         
         justify-content: center;
@@ -442,6 +462,7 @@ footer
         margin: 0;
         padding: $normal-padding * 2.5;
         padding-top: $normal-padding;
+        padding-bottom: $normal-padding ;
 
         h1
         {
@@ -489,6 +510,10 @@ footer
         align-items: center;
         text-align: center;
 
+        padding-top: 10%;
+        padding-bottom: 10%;
+        margin-bottom: -4.5%;
+
         .button
         {           
             margin-top: 4vw;
@@ -509,8 +534,14 @@ footer
 
     footer 
     {
+        background-color: white;
+
+        position: relative;
+        z-index: 9999;
+
         padding: $normal-padding;
         padding-top: $normal-padding * 0.7;
+        padding-bottom: $normal-padding * 0.7;
 
         #container
         {
