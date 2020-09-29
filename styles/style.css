@@ -6,7 +6,7 @@
   list-style-type: none; }
 
 body {
-  font-family: 'IBM Plex Mono', sans-serif;
+  font-family: "IBM Plex Mono", sans-serif;
   display: flex;
   justify-content: center;
   flex-direction: column; }
@@ -20,7 +20,7 @@ nav {
 
 h1 {
   width: 80%;
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
   font-size: 10vw;
   font-weight: 400;
   line-height: 1.2em; }
@@ -35,7 +35,7 @@ header {
     line-height: 1.5em; }
 
 #menu {
-  /*background-color: aquamarine;*/
+  background-color: aquamarine;
   width: 1.8em;
   height: 1.8em; }
   #menu ul {
@@ -43,8 +43,8 @@ header {
 
 #logo {
   background-color: bisque;
-  width: 1.8em;
-  height: 1.8em; }
+  width: 2vw;
+  height: 2vw; }
 
 #text-crossed {
   text-decoration-line: line-through; }
@@ -57,9 +57,12 @@ header {
   #episodios h1 {
     color: white;
     padding-bottom: 5%; }
-  #episodiosgrid {
+  #episodios #episodios-grid {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap; }
+    #episodios #episodios-grid iframe {
+      width: 100%; }
   #episodios li {
     width: 100%;
     padding-bottom: 2%; }
@@ -119,11 +122,17 @@ header {
   padding-left: 5%;
   padding-right: 5%;
   background-color: #0000FF;
-  color: white; }
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
   #novedades h1 {
-    width: auto;
-    padding-bottom: 5%;
-    text-align: center; }
+    width: 100%; }
+
+#ultimas-novedades {
+  text-align: center;
+  padding: 2vh; }
 
 .button {
   background-color: #00F3BB;
@@ -157,19 +166,21 @@ footer {
     font-size: 4.5vw; }
 
   nav {
+    align-items: center;
     padding: 6%;
     padding-top: 2%;
     padding-bottom: 1%; }
 
   #menu {
-    width: auto; }
+    width: auto;
+    background-color: transparent; }
     #menu ul {
       display: flex;
       flex-direction: row;
       justify-content: flex-end; }
       #menu ul li {
-        font-size: 1.5vmin;
-        padding-left: 2.5%; }
+        font-size: 1vw;
+        padding-left: 10%; }
 
   header {
     padding-left: 15%;
@@ -192,17 +203,14 @@ footer {
     #episodios h1 {
       padding-left: 10.5%;
       font-size: 3.36vw; }
-
-  #episodios-grid {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding-left: 5%;
-    padding-right: 5%; }
-    #episodios-grid li {
-      width: 47%;
-      height: 280px; }
+    #episodios #episodios-grid {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly; }
+      #episodios #episodios-grid iframe {
+        width: 45%;
+        height: 280px; }
 
   #donde-venimos-section {
     display: flex;
@@ -253,10 +261,50 @@ footer {
     #nuestros-temas #temas-grid {
       display: flex;
       justify-content: space-between;
-      flex-direction: row; }
-    #nuestros-temas .tema li {
-      /* ACOMODAR TAMAÑO DE IMAGENES */ }
-    #nuestros-temas .tema p {
-      font-size: 1.68vw; } }
+      flex-direction: row;
+      margin-top: 6vw; }
+    #nuestros-temas .tema {
+      padding: 0px;
+      width: 17mvin; }
+      #nuestros-temas .tema #icon {
+        width: 8vw; }
+        #nuestros-temas .tema #icon img {
+          padding: 0px; }
+      #nuestros-temas .tema p {
+        width: auto;
+        font-size: 1.68vw; }
+
+  #novedades {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; }
+    #novedades .button {
+      margin-top: 4vw;
+      padding-top: 1.2vw;
+      padding-bottom: 1.2vw;
+      padding-left: 0%;
+      padding-right: 0%;
+      width: 30vw;
+      height: 5vw;
+      font-size: 1.8vw;
+      font-weight: 700; }
+
+  footer {
+    padding: 5%;
+    padding-top: 3.5%; }
+    footer #container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center; }
+      footer #container p {
+        font-size: 1.26vw; }
+      footer #container ul {
+        padding: 0px; }
+        footer #container ul li {
+          width: 2vw;
+          height: 2vw;
+          margin-left: 3vw; } }
 
 /*# sourceMappingURL=style.css.map */

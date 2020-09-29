@@ -2,6 +2,8 @@ $normal-padding: 5%;
 $text-size:  4.2vw;
 $background-blue: #0000FF;
 $button-color: #00F3BB;
+$body-font-type: 'IBM Plex Mono', sans-serif;
+$h1-font-type: 'IBM Plex Sans', sans-serif;
 
 *
 {
@@ -13,7 +15,7 @@ $button-color: #00F3BB;
 
 body
 {
-    font-family: 'IBM Plex Mono', sans-serif;
+    font-family: $body-font-type;
 
     display:flex;
 
@@ -35,7 +37,7 @@ nav
 h1
 {
     width: 80%;
-    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: $h1-font-type;
     font-size: 10vw;
     font-weight: 400;
     line-height: 1.2em;
@@ -57,7 +59,7 @@ header
 
 #menu
 {
-    /*background-color: aquamarine;*/
+    background-color: aquamarine;
     width: 1.8em;
     height: 1.8em;
 
@@ -70,8 +72,8 @@ header
 #logo
 {
     background-color: bisque;
-    width: 1.8em;
-    height: 1.8em;
+    width: 2vw;
+    height: 2vw;
 }
 
 #text-crossed
@@ -93,10 +95,16 @@ header
         padding-bottom: 5%;
     }
 
-    &grid
-    {
+    #episodios-grid
+    {        
         display: flex;
+        flex-direction: column;
         flex-wrap: wrap;
+
+        iframe
+        {
+            width: 100%;
+        }
     }
 
     li
@@ -202,18 +210,27 @@ header
     padding-bottom: $normal-padding * 4;
     padding-left: $normal-padding;
     padding-right: $normal-padding;
-
+    
     background-color: $background-blue;
     color: white;
 
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
     h1
     {
-        width: auto;
-        padding-bottom: $normal-padding;
-        text-align: center;
+        width: 100%;
     }
     
+}
+
+#ultimas-novedades
+{
+    text-align: center;
+    padding: 2vh;
 }
 
 .button
@@ -270,6 +287,8 @@ footer
     
     nav
     {
+        align-items: center;
+
         padding: $normal-padding * 1.2;
         padding-top: $normal-padding * 0.4;
         padding-bottom: $normal-padding * 0.2;
@@ -278,6 +297,7 @@ footer
     #menu
     {
         width: auto;
+        background-color: transparent;
 
         ul
         {   
@@ -287,8 +307,8 @@ footer
 
             li
             {
-                font-size: 1.5vmin;
-                padding-left: $normal-padding*0.5;
+                font-size: 1vw;
+                padding-left: $normal-padding * 2;
             }
         }
     }
@@ -331,21 +351,20 @@ footer
             padding-left: $normal-padding * 2.1;
             font-size: $text-size*0.8;
         }
-    }
 
-    #episodios-grid
-    {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        padding-left: $normal-padding;
-        padding-right: $normal-padding;
-        
-        li
+            
+        #episodios-grid
         {
-            width: 47%;
-            height: 280px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            
+            iframe
+            {
+                width: 45%;
+                height: 280px;
+            }
         }
     }
 
@@ -431,23 +450,90 @@ footer
             padding:0;
         }
 
+
+
         #temas-grid
         {
             display: flex;
             justify-content: space-between;
             flex-direction: row;
+            margin-top: 6vw;
         }
 
         .tema
         {
-            li
+            padding: 0px;
+            width: 17mvin;
+
+            #icon
             {
-                /* ACOMODAR TAMAÑO DE IMAGENES */
+                width: 8vw;
+                img
+                {
+                    padding: 0px;
+                }
             }
 
             p
             {
+                width: auto;
                 font-size: $text-size * 0.4;
+            }
+        }
+    }
+
+    #novedades
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        .button
+        {           
+            margin-top: 4vw;
+
+            padding-top: 1.2vw;
+            padding-bottom: 1.2vw;
+            padding-left: 0%;
+            padding-right: 0%;
+            
+            width: 30vw;
+            height: 5vw;
+
+            font-size: 1.8vw;
+            font-weight: 700;
+        }
+    }
+
+
+    footer 
+    {
+        padding: $normal-padding;
+        padding-top: $normal-padding * 0.7;
+
+        #container
+        {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            p
+            {
+                font-size: $text-size*0.3;
+            }
+    
+            ul 
+            {
+                padding: 0px;
+
+                li
+                {
+                    width: 2vw;
+                    height: 2vw;
+                    margin-left: 3vw;
+                }
             }
         }
     }
