@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Conexión css -->
-    <link rel="stylesheet" href="styles\style.css">
+    <link rel="stylesheet" href="styles/style.css">
 
     <!-- Importación de la tipografía IBM PLEX SANS/MONO -->
     <link
@@ -20,18 +20,20 @@
 </head>
 
 
+
 <body>
-    <nav>
-        <div id="logo"></div>
-        <div id="menu">
-            <ul>
-                <li>EPISODIOS</li>
-                <li>NOSOTROS</li>
-                <li>ENTREVISTAS</li>
-                <li>TÓPICOS</li>
-            </ul>
-        </div>
-    </nav>
+
+    <header class="header">
+        <a href="#" id="logo"><img src="img/logo.svg" alt="logo-blue-dot"></a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+          <li><a href="#episodios">EPISODIOS</a></li>
+          <li><a href="#donde-venimos-section">NOSOTROS</a></li>
+          <li><a href="#invitadas">ENTREVISTAS</a></li>
+          <li><a href="#nuestros-temas">TÓPICOS</a></li>
+        </ul>
+    </header>
 
     <main>
         <header>
@@ -54,10 +56,10 @@
                 <h1>Episodios</h1>
 
                 <div id="episodios-grid">
-                    <iframe src="https://open.spotify.com/embed-podcast/show/2ySVrxGkN6n6frMTo9Nsrt" width="300px" height="240px" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-                    <iframe src="https://open.spotify.com/embed-podcast/show/4kYCRYJ3yK5DQbP5tbfZby" width="300px" height="240px" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-                    <iframe src="https://open.spotify.com/embed-podcast/show/5JxcIaIkN8zx3Zy7yD9snv" width="300px" height="240px" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-                    <iframe src="https://open.spotify.com/embed-podcast/show/2Iibd5A6R7mxkCm4NwNmUn" width="300px" height="240px" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                    <iframe src="https://open.spotify.com/embed-podcast/show/2ySVrxGkN6n6frMTo9Nsrt" width="300" height="240" allow="encrypted-media"></iframe>
+                    <iframe src="https://open.spotify.com/embed-podcast/show/4kYCRYJ3yK5DQbP5tbfZby" width="300" height="240" allow="encrypted-media"></iframe>
+                    <iframe src="https://open.spotify.com/embed-podcast/show/5JxcIaIkN8zx3Zy7yD9snv" width="300" height="240" allow="encrypted-media"></iframe>
+                    <iframe src="https://open.spotify.com/embed-podcast/show/2Iibd5A6R7mxkCm4NwNmUn" width="300" height="240" allow="encrypted-media"></iframe>
                 </div>
             </div>
         </section>
@@ -65,7 +67,7 @@
         <section id="donde-venimos-section">
 
             <article id="celular">
-                <img src="img\phone.png" alt="Nota en celular, La historia secreta de las mujeres que codean">
+                <img src="img/phone.png" alt="Nota en celular, La historia secreta de las mujeres que codean">
             </article>
 
             <article id="donde-venimos">
@@ -93,13 +95,12 @@
 
             <article id="invitadas-grid">
                 <ul>
-                    <li><img src="img\An E.R.A.Univac 1103 computer in the 1950s.png" alt=""></li>
-                    <li><img src="img\Computer operators with an Eniac — the world’s first programmable general-purpose computer.png"
-                            alt=""></li>
-                    <li><img src="img\grace-hopper.png" alt=""></li>
-                    <li><img src="img\Katie-Bouman.png" alt=""></li>
-                    <li><img src="img\Margaret_Hamilton.png" alt=""></li>
-                    <li><img src="img\susan-kare.png" alt=""></li>
+                    <li><img src="img/computer1950s.png" alt="Univac 1103, computadora de 1950"></li>
+                    <li><img src="img/eniac.png" alt="mujer con computadora eniac"></li>
+                    <li><img src="img/grace-hopper.png" alt="programadora grace hopper"></li>
+                    <li><img src="img/Katie-Bouman.png" alt="programadora katie bouman"></li>
+                    <li><img src="img/Margaret_Hamilton.png" alt="programadora margaret hamilton"></li>
+                    <li><img src="img/susan-kare.png" alt="programadora susan kare"></li>
                 </ul>
             </article>
         </section>
@@ -112,7 +113,7 @@
             <ul id="temas-grid">
                 <li>
                     <ul class="tema">
-                        <li id="icon"><img src="img\icon1.svg" alt=""></li>
+                        <li class="icon"><img src="img/icon1.svg" alt="imagen de trabajo remoto"></li>
                         <li>
                             <p>Trabajo remoto</p>
                         </li>
@@ -120,7 +121,7 @@
                 </li>
                 <li>
                     <ul class="tema">
-                        <li id="icon"><img src="img\icon2.svg" alt=""></li>
+                        <li class="icon"><img src="img/icon2.svg" alt="imagen de repensar la programacion"></li>
                         <li>
                             <p>Repensando la <br>programación</p>
                         </li>
@@ -128,7 +129,7 @@
                 </li>
                 <li>
                     <ul class="tema">
-                        <li id="icon"><img src="img\icon3.svg" alt=""></li>
+                        <li class="icon"><img src="img/icon3.svg" alt="imagen de bases del codigo"></li>
                         <li>
                             <p>Bases del código</p>
                         </li>
@@ -136,7 +137,7 @@
                 </li>
                 <li>
                     <ul class="tema">
-                        <li id="icon"><img src="img\icon4.svg" alt=""></li>
+                        <li class="icon"><img src="img/icon4.svg" alt="imagen de seguridad informatica"></li>
                         <li>
                             <p>Seguridad informática</p>
                         </li>
@@ -162,11 +163,16 @@
         <div id="container">
             <p>© 2019- Hello blue pale dot</p>
             <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li><a href="http://spotify.com"><i class="fab fa-spotify"></i></a></li>
+                <li><a href="http://instagram.com"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="http://twitter.com"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="http://facebook.com"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="http://telegram.com"><i class="fab fa-telegram"></i></a> </li>
+                
+                
+                
+                
+                       
             </ul>
         </div>
     </footer>
